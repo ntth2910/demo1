@@ -1,0 +1,83 @@
+﻿<Window x:Class="WebAPIClient.PopupInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebAPIClient"
+        mc:Ignorable="d"
+        Title="PopupInfo" Height="450" Width="780">
+
+    <!--<Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        -->
+    <!--<Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>-->
+    <!--
+        <Border Grid.Column="0" BorderBrush="Black" BorderThickness=" 1 1 0 1"></Border>
+        <TextBlock Grid.Column="0"  Name="txt_id" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        <Border Grid.Column="1" BorderBrush="Black" BorderThickness=" 1 1 0 1"></Border>
+        <TextBlock Grid.Column="1"  Name="txt_name"  VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+
+        <Border Grid.Column="2" BorderBrush="Black" BorderThickness=" 1 1 0 1"></Border>
+        <TextBlock Grid.Column="2"  Name="txt_sex"  VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+
+        <Border Grid.Column="3" BorderBrush="Black" BorderThickness=" 1 1 0 1"></Border>
+        <TextBlock Grid.Column="3" Name="txt_medium_score" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        <Border Grid.Column="4" BorderBrush="Black" BorderThickness=" 1 1 0 1"></Border>
+        <TextBlock Grid.Column="4" Name="txt_phoneno" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        -->
+    <!--<Border Grid.Column="5" BorderBrush="Black" BorderThickness=" 1 1 1 1"></Border>
+            <TextBlock Grid.Column="5" Text="{Binding Path=Comment}" VerticalAlignment="Top" HorizontalAlignment="Left"/>-->
+    <!--
+    </Grid>-->
+    <!--<TextBlock Name="txt_name" > </TextBlock>
+        <TextBlock Name="txt_id"></TextBlock>
+        <TextBlock Name="txt_sex"></TextBlock>
+        <TextBlock Name="txt_medium_score"></TextBlock>
+        <TextBlock Name="txt_phoneNo"></TextBlock>-->
+    <Grid Margin="0,0,0,0" >
+
+
+        <Label Content=" Id" HorizontalAlignment="Left" Margin="28,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.085,-0.243"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="138,0,0,0">
+            <TextBlock x:Name="txt_id" Height="41" TextWrapping="Wrap"  Width="120" />
+        </Border>
+        <Label Content=" Name" HorizontalAlignment="Left" Margin="290,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.167,0.442"/>
+        <TextBox x:Name="txt_name" HorizontalAlignment="Left" Height="23" Margin="410,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Sex" HorizontalAlignment="Left" Margin="28,58,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.085,-0.243" Height="39"/>
+        <Label Content="Medium Score" HorizontalAlignment="Left" Margin="290,40,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_medium_score" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="410,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.754,0.717"/>
+        <ComboBox  x:Name="txt_sex" HorizontalAlignment="Left" Height="26" Margin="138,58,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem Content="Male"></ComboBoxItem>
+            <ComboBoxItem Content="Female"></ComboBoxItem>
+            <ComboBoxItem Content="Other"></ComboBoxItem>
+        </ComboBox>
+        <!--<TextBox x:Name="txt_sex" HorizontalAlignment="Left" Height="23" Margin="138,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>-->
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="28,102,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.085,-0.243" Height="24"/>
+        <TextBox x:Name="txt_phoneno" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="21" Margin="138,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <!--<Button Content="Add User" HorizontalAlignment="Left" Margin="290,366,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="53,404,0,0" TextWrapping="Wrap" x:Name="txtSearch" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="204,407,0,0" VerticalAlignment="Top" Width="75" x:Name="btnSearch" Click="BtnSearch_Click"/>
+        <Button Content="Show All" HorizontalAlignment="Left" Margin="290,407,0,0" VerticalAlignment="Top" Width="75" x:Name="btnShowAll"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="53,445,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="txtDelete"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="204,448,0,0" VerticalAlignment="Top" Width="75" x:Name="btnDelete" Click="BtnDelete_Click"/>-->
+        <Button Content="Update"  HorizontalAlignment="Left" Margin="204,128,0,0" VerticalAlignment="Top" Width="75" x:Name="btnSearch" Click="BtnUpdate_Click" RenderTransformOrigin="0.567,2.5" Height="26"/>
+    </Grid>
+
+</Window>
